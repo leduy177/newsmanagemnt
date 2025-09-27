@@ -1,0 +1,57 @@
+﻿@model PROJECT_CLIENT.DTO.ArticleDto
+@{
+    ViewData["Title"] = "Xoá bài báo";
+}
+
+<style>
+    h2 {
+        color: #6f42c1;
+        font-weight: bold;
+    }
+
+    .card-warning {
+        border: 1px solid #f0ad4e;
+        background-color: #fff3cd;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .btn-purple {
+        background-color: #6f42c1;
+        color: white;
+        border: none;
+    }
+
+        .btn-purple:hover {
+            background-color: #5a36a5;
+        }
+</style>
+
+<h2><i class="fa-solid fa-trash-can text-danger"></i> @ViewData["Title"]</h2>
+
+<div class="card-warning">
+    <strong>⚠ Bạn có chắc chắn muốn xoá bài báo sau?</strong>
+</div>
+
+<div class="mb-4">
+    <dl class="row">
+        <dt class="col-sm-3 text-purple">📌 Tiêu đề</dt>
+        <dd class="col-sm-9">@Model.Title</dd>
+
+        <dt class="col-sm-3 text-purple">📝 Nội dung</dt>
+        <dd class="col-sm-9">@Model.Content</dd>
+
+        <dt class="col-sm-3 text-purple">✍️ Tác giả</dt>
+        <dd class="col-sm-9">@Model.AuthorName</dd>
+
+        <dt class="col-sm-3 text-purple">📚 Chuyên mục</dt>
+        <dd class="col-sm-9">@Model.CategoryName</dd>
+    </dl>
+</div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger me-2"><i class="fa-solid fa-trash"></i> Xoá</button>
+    <a asp-action="Index" class="btn btn-outline-secondary">Huỷ</a>
+</form>

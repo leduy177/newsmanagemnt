@@ -1,0 +1,56 @@
+﻿@model PROJECT_CLIENT.DTO.ArticleDto
+@{
+    ViewData["Title"] = "Xoá bài báo";
+}
+
+<style>
+    h2 {
+        color: #6f42c1;
+    }
+
+    .btn-purple {
+        background-color: #6f42c1;
+        color: white;
+        border: none;
+    }
+
+        .btn-purple:hover {
+            background-color: #5a36a5;
+        }
+
+    .alert-warning {
+        border-color: #b99fe0;
+        background-color: #f6f0fb;
+        color: #6f42c1;
+    }
+
+    dt {
+        color: #6f42c1;
+    }
+</style>
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="alert alert-warning">
+    <strong>Bạn có chắc chắn muốn xoá bài báo sau?</strong>
+</div>
+
+<dl class="row">
+    <dt class="col-sm-2">Tiêu đề</dt>
+    <dd class="col-sm-10">@Model.Title</dd>
+
+    <dt class="col-sm-2">Nội dung</dt>
+    <dd class="col-sm-10">@Model.Content</dd>
+
+    <dt class="col-sm-2">Tác giả</dt>
+    <dd class="col-sm-10">@Model.AuthorName</dd>
+
+    <dt class="col-sm-2">Chuyên mục</dt>
+    <dd class="col-sm-10">@Model.CategoryName</dd>
+</dl>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-purple me-2">Xoá</button>
+    <a asp-action="Index" class="btn btn-outline-secondary">Huỷ</a>
+</form>

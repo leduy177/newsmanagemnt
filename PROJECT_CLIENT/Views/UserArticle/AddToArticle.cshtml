@@ -1,0 +1,60 @@
+﻿@model PROJECT_CLIENT.DTO.UserArticleCreateDTO
+
+@{
+    ViewBag.Title = "Thêm người vào bài viết";
+}
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">@TempData["Message"]</div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+
+<h2 class="text-purple mb-4">➕ Thêm người vào bài viết #@Model.ArticleId</h2>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <form asp-action="AddToArticle" method="post">
+            <input type="hidden" asp-for="ArticleId" />
+
+            <div class="mb-3">
+                <label asp-for="UserId" class="form-label text-purple">Người dùng (UserId)</label>
+                <input asp-for="UserId" class="form-control" placeholder="Nhập ID người dùng..." />
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="RoleInArticle" class="form-label text-purple">Vai trò</label>
+                <input asp-for="RoleInArticle" class="form-control" placeholder="Ví dụ: AUTHOR, EDITOR..." />
+                <span asp-validation-for="RoleInArticle" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-purple">➕ Thêm vào bài viết</button>
+        </form>
+    </div>
+</div>
+
+<style>
+    .text-purple {
+        color: #6f42c1;
+    }
+
+    .btn-purple {
+        background-color: #6f42c1;
+        border-color: #6f42c1;
+        color: white;
+    }
+
+        .btn-purple:hover {
+            background-color: #59329d;
+            border-color: #59329d;
+        }
+</style>

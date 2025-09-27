@@ -1,0 +1,119 @@
+﻿@model IEnumerable<PROJECT_CLIENT.DTO.ArticleDto>
+
+@{
+    ViewData["Title"] = "Quản lý bài viết chờ duyệt";
+}
+
+<style>
+    h3 {
+        color: #6f42c1;
+        font-weight: 600;
+    }
+
+    .btn-purple {
+        background-color: #6f42c1;
+        color: white;
+        border: none;
+    }
+
+        .btn-purple:hover {
+            background-color: #5a36a5;
+        }
+
+    .table thead {
+        background-color: #f5f0fa;
+        color: #6f42c1;
+    }
+
+    .list-group-item.active,
+    .list-group-item:hover {
+        background-color: #6f42c1;
+        color: white;
+        border-color: #6f42c1;
+    }
+
+    .alert-info {
+        background-color: #ede7f6;
+        color: #6f42c1;
+        border-left: 5px solid #6f42c1;
+    }
+</style>
+
+<div class="list-group mb-3">
+    <a class="list-group-item list-group-item-action" asp-controller="ArticleByModerator" asp-action="Index">Quản lý bài báo</a>
+    <a class="list-group-item list-group-item-action" asp-controller="Comment" asp-action="Index">Quản lý Comment</a>
+</div>
+
+<h3>Danh sách bài viết đang chờ duyệt</h3>
+<form method="get" class="mb-3 search-bar">
+    <label for="pageSize">Bản ghi/trang:</label>
+    <select name="pageSize" id="pageSize" onchange="this.form.submit()" class="form-select d-inline-block w-auto">
+        @foreach (var size in new[] { 3, 5, 10 })
+        {
+            <option value="@size" selected="@(ViewBag.PageSize == size)">
+                @size
+            </option>
+        }
+    </select>
+
+    <input type="text" name="searchTitle" class="search-input" placeholder="Tìm tiêu đề..."
+           value="@ViewBag.SearchTitle" />
+
+    <button type="submit" class="btn btn-purple">Tìm kiếm</button>
+</form>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-info">@TempData["Message"]</div>
+}
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Tiêu đề</th>
+            <th>Thể loại</th>
+            <th>Trạng thái</th>
+            <th>Tác giả</th>
+            <th>Ngày tạo</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.OrderByDescending(x => x.Status == 0).ThenByDescending(x => x.CreatedAt))
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.CategoryName</td>
+                <td>
+                    @(item.Status == 0 ? "⏳ Đang chờ duyệt"
+                                    : item.Status == 1 ? "✅ Đã duyệt"
+                                    : "❌ Bị từ chối")
+            </td>
+            <td>@item.AuthorName</td>
+            <td>@item.CreatedAt.ToString("dd/MM/yyyy")</td>
+            <td>
+                <form asp-action="Moderate" method="post" style="display:inline">
+                    <input type="hidden" name="id" value="@item.Id" />
+                    <input type="hidden" name="approve" value="true" />
+                    <button class="btn btn-purple btn-sm me-1">Duyệt</button>
+                </form>
+                <form asp-action="Moderate" method="post" style="display:inline">
+                    <input type="hidden" name="id" value="@item.Id" />
+                    <input type="hidden" name="approve" value="false" />
+                    <button class="btn btn-outline-purple btn-sm border border-purple">Từ chối</button>
+                </form>
+            </td>
+        </tr>
+                }
+    </tbody>
+</table>
+<nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+        {
+            <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                <a class="page-link" href="@Url.Action("Moderate", new { page = i, pageSize = ViewBag.PageSize, searchTitle = ViewBag.SearchTitle })">@i</a>
+            </li>
+        }
+    </ul>
+</nav>

@@ -1,0 +1,98 @@
+﻿@model PROJECT_CLIENT.DTO.ArticleCreateDto
+@{
+    ViewData["Title"] = "Tạo bài báo mới";
+    var categories = ViewBag.Categories as List<PROJECT_CLIENT.DTO.CategoryDTO>;
+    var tags = ViewBag.Tags as List<PROJECT_CLIENT.DTO.TagDTO>;
+}
+
+<style>
+    .btn-purple {
+        background-color: #6f42c1;
+        color: white;
+    }
+
+        .btn-purple:hover {
+            background-color: #5a36a5;
+        }
+
+    .dropdown-toggle-purple {
+        background-color: #6f42c1;
+        color: white;
+    }
+
+        .dropdown-toggle-purple:hover {
+            background-color: #5a36a5;
+        }
+
+    h2 {
+        color: #6f42c1;
+    }
+</style>
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="Title" class="form-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Content" class="form-label"></label>
+        <textarea asp-for="Content" class="form-control" rows="6"></textarea>
+        <span asp-validation-for="Content" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Source" class="form-label"></label>
+        <input asp-for="Source" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="CategoryId" class="form-label">Thể loại</label>
+        <select asp-for="CategoryId" class="form-select">
+            @foreach (var c in categories)
+            {
+                <option value="@c.Id">@c.Name</option>
+            }
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ImageUrl" class="form-label"></label>
+        <input asp-for="ImageUrl" class="form-control" />
+        <span asp-validation-for="ImageUrl" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label class="form-label">Chọn các tag</label>
+        <div class="dropdown">
+            <button class="btn dropdown-toggle dropdown-toggle-purple" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Chọn tag
+            </button>
+            <ul class="dropdown-menu" style="max-height: 200px; overflow-y: auto;">
+                @foreach (var tag in tags)
+                {
+                    <li class="dropdown-item">
+                        <label><input type="checkbox" name="TagIds" value="@tag.Id" /> @tag.Name</label>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+
+    <input type="hidden" name="TagIdsInput" id="TagIdsInput" />
+
+    <button type="submit" class="btn btn-purple mt-3" onclick="prepareTagIds()">Tạo bài báo</button>
+</form>
+
+@section Scripts {
+    <script>
+        function prepareTagIds() {
+            const selected = [];
+            document.querySelectorAll('input[name="TagIds"]:checked').forEach(cb => selected.push(cb.value));
+            document.getElementById('TagIdsInput').value = selected.join(',');
+        }
+    </script>
+}

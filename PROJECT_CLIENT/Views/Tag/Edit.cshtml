@@ -1,0 +1,35 @@
+﻿@model PROJECT_CLIENT.DTO.TagDTO
+@{
+    ViewData["Title"] = "Sửa Tag";
+}
+
+<h2 class="text-purple mb-4">@ViewData["Title"]</h2>
+
+<form asp-action="Edit" method="post" class="card shadow-sm p-4" style="max-width: 500px;">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group mb-3">
+        <label asp-for="Name" class="form-label text-purple"></label>
+        <input asp-for="Name" class="form-control" placeholder="Nhập tên tag" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-purple w-100">💾 Lưu thay đổi</button>
+</form>
+
+<style>
+    .text-purple {
+        color: #6f42c1;
+    }
+
+    .btn-purple {
+        background-color: #6f42c1;
+        border-color: #6f42c1;
+        color: white;
+    }
+
+        .btn-purple:hover {
+            background-color: #59329d;
+            border-color: #59329d;
+        }
+</style>

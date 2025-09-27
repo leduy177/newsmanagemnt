@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Quản lí by Author";
+}
+
+<style>
+    .card-manage {
+        border: 1px solid #e0d9f5;
+        border-radius: 12px;
+        background-color: #f8f6fc;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(111, 66, 193, 0.1);
+    }
+
+    .list-group-item-purple {
+        background-color: #6f42c1;
+        color: white;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+        .list-group-item-purple:hover {
+            background-color: #59329d;
+            color: white;
+        }
+
+    .title-purple {
+        color: #6f42c1;
+        font-weight: bold;
+    }
+</style>
+
+<h2 class="title-purple">🔧 Quản lý hệ thống by Author</h2>
+<hr />
+
+<div class="card-manage">
+    <div class="list-group">
+        <a class="list-group-item list-group-item-action list-group-item-purple"
+           asp-controller="Article" asp-action="Index">
+            📰 Quản lý bài báo
+        </a>
+        <a class="list-group-item list-group-item-action list-group-item-purple"
+           asp-controller="Category" asp-action="Index">
+            📚 Quản lý chuyên mục
+        </a>
+        <a class="list-group-item list-group-item-action list-group-item-purple"
+           asp-controller="Tag" asp-action="Index">
+            🔖 Quản lý tag
+        </a>
+        <a class="list-group-item list-group-item-action list-group-item-purple"
+           asp-controller="UserArticle" asp-action="Index">
+            👥 Quản lý người dùng trong bài viết
+        </a>
+    </div>
+</div>

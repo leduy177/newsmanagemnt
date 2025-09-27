@@ -1,0 +1,43 @@
+﻿@model PROJECT_CLIENT.DTO.CategoryDTO
+@{
+    ViewData["Title"] = "Tạo chuyên mục";
+}
+
+<style>
+    h2 {
+        color: #6f42c1;
+        font-weight: bold;
+    }
+
+    .btn-purple {
+        background-color: #6f42c1;
+        color: white;
+        border: none;
+    }
+
+        .btn-purple:hover {
+            background-color: #5a36a5;
+        }
+
+    .form-label {
+        font-weight: 500;
+        color: #6f42c1;
+    }
+</style>
+
+<h2><i class="fa-solid fa-plus text-purple"></i> @ViewData["Title"]</h2>
+
+<div class="card shadow-sm mt-3">
+    <div class="card-body">
+        <form asp-action="Create" method="post">
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label">Tên chuyên mục</label>
+                <input asp-for="Name" class="form-control" placeholder="Nhập tên chuyên mục" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-purple"><i class="fa-solid fa-check"></i> Tạo</button>
+            <a asp-action="Index" class="btn btn-secondary ms-2">Huỷ</a>
+        </form>
+    </div>
+</div>

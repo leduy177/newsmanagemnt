@@ -1,0 +1,109 @@
+﻿@model IEnumerable<PROJECT_CLIENT.DTO.CommentDTO>
+@{
+    ViewData["Title"] = "Danh sách bình luận";
+}
+
+<style>
+    h2 {
+        color: #6f42c1;
+        font-weight: bold;
+    }
+
+    .btn-purple {
+        background-color: #6f42c1;
+        color: white;
+        border: none;
+    }
+
+        .btn-purple:hover {
+            background-color: #5a36a5;
+        }
+
+    .table-purple thead {
+        background-color: #ede7f6;
+        color: #4a148c;
+    }
+</style>
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-success">@ViewBag.Message</div>
+}
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+
+
+<div class="list-group mb-4">
+    <a class="list-group-item list-group-item-action" asp-controller="ArticleByModerator" asp-action="Index">📰 Quản lý bài báo</a>
+    <a class="list-group-item list-group-item-action active bg-purple text-white" asp-controller="Comment" asp-action="Index">💬 Quản lý bình luận</a>
+    <a class="list-group-item list-group-item-action" asp-controller="Article" asp-action="Moderate">✅ Danh sách duyệt</a>
+</div>
+<form method="get" class="mb-3 search-bar">
+    <label for="pageSize">Bản ghi/trang:</label>
+    <select name="pageSize" id="pageSize" onchange="this.form.submit()" class="form-select d-inline-block w-auto">
+        @foreach (var size in new[] { 3, 5, 10 })
+        {
+            <option value="@size" selected="@(ViewBag.PageSize == size)">
+                @size
+            </option>
+        }
+    </select>
+
+    <input type="text" name="searchTitle" class="search-input" placeholder="Tìm Bình Luận..."
+           value="@ViewBag.SearchTitle" />
+
+    <button type="submit" class="btn btn-purple">Tìm kiếm</button>
+</form>
+<h2><i class="fa-solid fa-comments"></i> @ViewData["Title"]</h2>
+
+<div class="table-responsive mt-3">
+    <table class="table table-bordered table-striped table-purple">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nội dung</th>
+                <th>Ngày đăng</th>
+                <th>Bài viết</th>
+                <th>Người dùng</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@(item.Content.Length > 100 ? item.Content.Substring(0, 100) + "..." : item.Content)</td>
+                    <td>@item.PostedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@item.ArticleTitle</td>
+                    <td>@item.UserFullName</td>
+                    <td>
+                        <a href="javascript:void(0);" onclick="confirmDelete('@Url.Action("Delete", new { id = item.Id })')" class="btn btn-sm btn-danger">
+                            <i class="fa-solid fa-trash"></i> Xoá
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@section Scripts {
+    <script>
+        function confirmDelete(url) {
+            if (confirm("Bạn có chắc chắn muốn xoá bình luận này?")) {
+                window.location.href = url;
+            }
+        }
+    </script>
+}
+<nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+        {
+            <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                <a class="page-link" href="@Url.Action("Index", new { page = i, pageSize = ViewBag.PageSize, searchTitle = ViewBag.SearchTitle })">@i</a>
+            </li>
+        }
+    </ul>
+</nav>

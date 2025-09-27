@@ -1,0 +1,133 @@
+﻿@model IEnumerable<PROJECT_CLIENT.DTO.ArticleDto>
+@{
+    ViewData["Title"] = "Danh sách bài báo";
+}
+
+<style>
+    h2 {
+        color: #6f42c1;
+        font-weight: bold;
+    }
+
+    .btn-purple {
+        background-color: #6f42c1;
+        color: white;
+        border: none;
+    }
+
+        .btn-purple:hover {
+            background-color: #5a36a5;
+        }
+
+    .table thead {
+        background-color: #f3ecfa;
+        color: #6f42c1;
+    }
+
+    .list-group-item.active,
+    .list-group-item:hover {
+        background-color: #6f42c1;
+        color: white;
+        border-color: #6f42c1;
+    }
+
+    .tag-text {
+        font-size: 0.9em;
+        color: #6f42c1;
+    }
+
+    .badge-purple {
+        background-color: #6f42c1;
+    }
+</style>
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">@TempData["Message"]</div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+
+<div class="list-group mb-4">
+    <a class="list-group-item list-group-item-action" asp-controller="ArticleByModerator" asp-action="Index">📄 Quản lý bài báo</a>
+    <a class="list-group-item list-group-item-action" asp-controller="Comment" asp-action="Index">💬 Quản lý Comment</a>
+    <a class="list-group-item list-group-item-action" asp-controller="Article" asp-action="Moderate">📝 Danh sách duyệt</a>
+</div>
+
+<h2>📚 Danh sách bài báo</h2>
+<form method="get" class="mb-3 search-bar">
+    <label for="pageSize">Bản ghi/trang:</label>
+    <select name="pageSize" id="pageSize" onchange="this.form.submit()" class="form-select d-inline-block w-auto">
+        @foreach (var size in new[] { 3, 5, 10 })
+        {
+            <option value="@size" selected="@(ViewBag.PageSize == size)">
+                @size
+            </option>
+        }
+    </select>
+
+    <input type="text" name="searchTitle" class="search-input" placeholder="Tìm tiêu đề..."
+           value="@ViewBag.SearchTitle" />
+
+    <button type="submit" class="btn btn-purple">Tìm kiếm</button>
+</form>
+<table class="table table-bordered table-hover shadow-sm">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tiêu đề</th>
+            <th>Nội dung</th>
+            <th>Nguồn</th>
+            <th>Ngày tạo</th>
+            <th>Trạng thái</th>
+            <th>Thể loại</th>
+            <th>Tác giả</th>
+            <th>Tags</th>
+            <th>Ảnh</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.OrderByDescending(m => m.CreatedAt))
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@(item.Title?.Length > 100 ? item.Title.Substring(0, 100) + "..." : item.Title)</td>
+                <td>@(item.Content?.Length > 100 ? item.Content.Substring(0, 100) + "..." : item.Content)</td>
+                <td>@(item.Source?.Length > 100 ? item.Source.Substring(0, 100) + "..." : item.Source)</td>
+                <td>@item.CreatedAt.ToString("dd-MM-yyyy")</td>
+                <td>
+                    @if (item.Status == 1)
+                    {
+                        <span class="badge bg-success">Xác nhận</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-secondary">Ẩn</span>
+                    }
+                </td>
+                <td>@item.CategoryName</td>
+                <td>@item.AuthorName</td>
+                <td class="tag-text">
+                    @string.Join(", ", item.Tags?.Take(5) ?? Enumerable.Empty<string>())
+                </td>
+                <td>@(item.ImageUrl?.Length > 100 ? item.ImageUrl.Substring(0, 100) + "..." : item.ImageUrl)</td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Xoá</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+        {
+            <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                <a class="page-link" href="@Url.Action("Index", new { page = i, pageSize = ViewBag.PageSize, searchTitle = ViewBag.SearchTitle })">@i</a>
+            </li>
+        }
+    </ul>
+</nav>

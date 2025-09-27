@@ -1,0 +1,42 @@
+﻿@model PROJECT_CLIENT.DTO.TagDTO
+@{
+    ViewData["Title"] = "Tạo Tag";
+}
+
+
+<h2 class="text-center text-purple mb-4">@ViewData["Title"]</h2>
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-success">@ViewBag.Message</div>
+}
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+<form asp-action="Create" method="post" class="mx-auto p-4 border rounded shadow-sm" style="max-width: 500px; background-color: #f9f7fc;">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label text-purple">Tên tag</label>
+        <input asp-for="Name" class="form-control" placeholder="Nhập tên tag" />
+        <span asp-validation-for="Name" class="text-danger small"></span>
+    </div>
+
+    <button type="submit" class="btn btn-purple w-100">Tạo</button>
+</form>
+
+<style>
+    .text-purple {
+        color: #6f42c1;
+    }
+
+    .btn-purple {
+        background-color: #6f42c1;
+        border-color: #6f42c1;
+        color: white;
+    }
+
+        .btn-purple:hover {
+            background-color: #59329d;
+            border-color: #59329d;
+            color: white;
+        }
+</style>

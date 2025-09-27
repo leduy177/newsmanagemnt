@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Admin Management";
+}
+
+<style>
+    .btn-purple {
+        background-color: #6f42c1;
+        color: white;
+        border: none;
+    }
+
+        .btn-purple:hover {
+            background-color: #5a36a5;
+        }
+
+    .border-purple {
+        border-left: 4px solid #6f42c1;
+        padding-left: 10px;
+    }
+
+    .text-purple {
+        color: #6f42c1;
+    }
+</style>
+
+<h2 class="text-purple">Quản lý Tài Khoản</h2>
+
+<div class="border-purple mb-4">
+    <form asp-action="AssignRole" method="post" class="mb-4">
+        <div class="mb-2">
+            <input name="UserName" class="form-control" placeholder="Tên đăng nhập" required />
+        </div>
+        <div class="mb-2">
+            <select name="Role" class="form-select" required>
+                <option value="" disabled selected>Chọn vai trò</option>
+                <option value="ADMIN">ADMIN</option>
+                <option value="AUTHOR">AUTHOR</option>
+                <option value="MODERATOR">MODERATOR</option>
+                <option value="VIEWER">VIEWER</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-purple">Cấp vai trò</button>
+    </form>
+
+    <form asp-action="DisableAccount" method="post" class="mb-3">
+        <input name="UserName" class="form-control mb-2" placeholder="Tên đăng nhập" required />
+        <button type="submit" class="btn btn-outline-danger">Vô hiệu hóa tài khoản</button>
+    </form>
+
+    <form asp-action="EnableAccount" method="post" class="mb-2">
+        <input name="UserName" class="form-control mb-2" placeholder="Tên đăng nhập" required />
+        <button type="submit" class="btn btn-outline-success">Kích hoạt tài khoản</button>
+    </form>
+
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-info mt-3">
+            @TempData["Message"]
+        </div>
+    }
+</div>

@@ -1,0 +1,98 @@
+﻿@model IEnumerable<PROJECT_CLIENT.DTO.UserArticleDTO>
+
+@{
+    ViewBag.Title = "User Article List";
+}
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">@TempData["Message"]</div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+<h2 class="text-purple mb-4">📚 Danh sách Người dùng trong Bài báo</h2>
+<form method="get" class="mb-3 search-bar">
+    <label for="pageSize">Bản ghi/trang:</label>
+    <select name="pageSize" id="pageSize" onchange="this.form.submit()" class="form-select d-inline-block w-auto">
+        @foreach (var size in new[] { 3, 5, 10 })
+        {
+            <option value="@size" selected="@(ViewBag.PageSize == size)">
+                @size
+            </option>
+        }
+    </select>
+
+    <input type="text" name="searchTitle" class="search-input" placeholder="Tìm..."
+           value="@ViewBag.SearchTitle" />
+
+    <button type="submit" class="btn btn-purple">Tìm kiếm</button>
+</form>
+<table class="table table-bordered table-striped shadow-sm">
+    <thead class="table-purple text-white">
+        <tr>
+            <th>📰 ID Bài Báo</th>
+            <th>👤 UserId</th>
+            <th>👨‍💻 Tên Người Dùng</th>
+            <th>🎭 Vai Trò</th>
+            <th>⚙️ Hành Động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ArticleId</td>
+                <td>@item.UserId</td>
+                <td>@item.UserName</td>
+                <td>@item.RoleInArticle</td>
+                <td>
+                    <a asp-action="Details" asp-route-articleId="@item.ArticleId" class="btn btn-outline-purple btn-sm me-1">Chi tiết</a>
+                    <a asp-action="AddToArticle" asp-route-articleId="@item.ArticleId" class="btn btn-purple btn-sm">Thêm</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<style>
+    .text-purple {
+        color: #6f42c1;
+    }
+
+    .btn-purple {
+        background-color: #6f42c1;
+        border-color: #6f42c1;
+        color: white;
+    }
+
+        .btn-purple:hover {
+            background-color: #59329d;
+            border-color: #59329d;
+        }
+
+    .btn-outline-purple {
+        border: 1px solid #6f42c1;
+        color: #6f42c1;
+    }
+
+        .btn-outline-purple:hover {
+            background-color: #6f42c1;
+            color: white;
+        }
+
+    .table-purple {
+        background-color: #6f42c1;
+    }
+</style>
+<nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+        {
+            <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                <a class="page-link" href="@Url.Action("Index", new { page = i, pageSize = ViewBag.PageSize, searchTitle = ViewBag.SearchTitle })">@i</a>
+            </li>
+        }
+    </ul>
+</nav>

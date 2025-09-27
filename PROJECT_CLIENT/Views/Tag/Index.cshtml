@@ -1,0 +1,97 @@
+﻿@model IEnumerable<PROJECT_CLIENT.DTO.TagDTO>
+@{
+    ViewData["Title"] = "Danh sách Tag";
+}
+
+<h2 class="text-purple mb-4">@ViewData["Title"]</h2>
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-success">@ViewBag.Message</div>
+}
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+<form method="get" class="mb-3 search-bar">
+    <label for="pageSize">Bản ghi/trang:</label>
+    <select name="pageSize" id="pageSize" onchange="this.form.submit()" class="form-select d-inline-block w-auto">
+        @foreach (var size in new[] { 3, 5, 10 })
+        {
+            <option value="@size" selected="@(ViewBag.PageSize == size)">
+                @size
+            </option>
+        }
+    </select>
+
+    <input type="text" name="searchTitle" class="search-input" placeholder="Tìm Tag..."
+           value="@ViewBag.SearchTitle" />
+
+    <button type="submit" class="btn btn-purple">Tìm kiếm</button>
+</form>
+<a asp-action="Create" class="btn btn-purple mb-3">➕ Tạo mới</a>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-purple text-white">
+        <tr>
+            <th>ID</th>
+            <th>Tên Tag</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var tag in Model)
+        {
+            <tr>
+                <td>@tag.Id</td>
+                <td>@tag.Name</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@tag.Id" class="btn btn-sm btn-warning me-1">Sửa</a>
+                    <a href="javascript:void(0);" onclick="confirmDelete('@Url.Action("Delete", new { id = tag.Id })')" class="btn btn-sm btn-danger">
+                        <i class="fa-solid fa-trash"></i> Xoá
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<style>
+    .text-purple {
+        color: #6f42c1;
+    }
+
+    .btn-purple {
+        background-color: #6f42c1;
+        border-color: #6f42c1;
+        color: white;
+    }
+
+        .btn-purple:hover {
+            background-color: #59329d;
+            border-color: #59329d;
+            color: white;
+        }
+
+    .table-purple {
+        background-color: #6f42c1;
+    }
+</style>
+@section Scripts {
+    <script>
+        function confirmDelete(url) {
+            if (confirm("Bạn có chắc chắn muốn xoá Tag này?")) {
+                window.location.href = url;
+            }
+        }
+    </script>
+}
+<nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+        {
+            <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                <a class="page-link" href="@Url.Action("Index", new { page = i, pageSize = ViewBag.PageSize, searchTitle = ViewBag.SearchTitle })">@i</a>
+            </li>
+        }
+    </ul>
+</nav>

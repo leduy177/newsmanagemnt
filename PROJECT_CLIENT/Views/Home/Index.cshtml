@@ -1,0 +1,154 @@
+﻿@model IEnumerable<PROJECT_CLIENT.DTO.ArticleDto>
+@{
+    var categories = ViewBag.Categories as IEnumerable<PROJECT_CLIENT.DTO.CategoryDTO>;
+    var currentCategory = Context.Request.Query["categoryName"].ToString();
+}
+
+
+<style>
+    .text-purple {
+        color: #6f42c1;
+    }
+
+    .category-scroll {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+    }
+
+        .category-scroll a {
+            display: inline-block;
+            margin-right: 15px;
+            text-decoration: none;
+            color: #6f42c1;
+            padding: 6px 12px;
+            border-radius: 5px;
+            white-space: nowrap;
+            font-weight: 500;
+            border: 1px solid transparent;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+            .category-scroll a:hover {
+                background-color: #f3e9fd;
+                color: #6f42c1;
+            }
+
+            .category-scroll a.active {
+                background-color: #6f42c1;
+                color: #fff !important;
+            }
+
+    .search-form {
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #333;
+        min-height: 3em;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+        color: #555;
+    }
+
+    .card-img-top {
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .card {
+        transition: transform 0.2s ease-in-out;
+    }
+
+        .card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        }
+
+    .btn-purple {
+        background-color: #6f42c1;
+        border-color: #6f42c1;
+        color: white;
+    }
+
+        .btn-purple:hover {
+            background-color: #59329d;
+            border-color: #59329d;
+        }
+
+    .form-select, .form-control {
+        border-radius: 6px;
+    }
+</style>
+
+<div class="search-form">
+    <form asp-action="Index" method="get">
+        <input type="text" name="searchTitle" class="form-control mb-3" placeholder="🔎 Tìm kiếm bài viết..."
+               value="@Context.Request.Query["searchTitle"]" />
+
+        <div class="row">
+            <div class="col-md-4">
+                <label>Thời gian</label>
+                <select name="time" class="form-select">
+                    <option value="">Tất cả</option>
+                    <option value="24h">24 giờ qua</option>
+                    <option value="7d">7 ngày qua</option>
+                    <option value="30d">30 ngày qua</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label>Chuyên mục</label>
+                <select name="categoryName" class="form-select">
+                    <option value="">Tất cả</option>
+                    @foreach (var cat in categories)
+                    {
+                        <option value="@cat.Name" selected="@(currentCategory == cat.Name ? "selected" : null)">
+                            @cat.Name
+                        </option>
+                    }
+                </select>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-purple mt-3">Lọc bài viết</button>
+    </form>
+</div>
+<h3 class="mt-4 mb-3 text-purple">📚 Danh sách bài viết</h3>
+
+<div class="category-scroll">
+    <a class="@(string.IsNullOrEmpty(currentCategory) ? "active" : "")" asp-action="Index">Tất cả</a>
+    @foreach (var cat in categories)
+    {
+        <a class="@(currentCategory == cat.Name ? "active" : "")"
+           asp-action="Index" asp-route-categoryName="@cat.Name">
+            @cat.Name
+        </a>
+    }
+</div>
+
+<div class="container">
+    <div class="row">
+        @foreach (var article in Model)
+        {
+            <div class="col-md-3 mb-5">
+                <div class="card h-100">
+                    <img src="@article.ImageUrl" class="card-img-top" alt="image" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@article.Title</h5>
+                        <p class="card-text">@article.Content.Substring(0, Math.Min(article.Content.Length, 150))...</p>
+                        <a asp-controller="Home" asp-action="Details" asp-route-id="@article.Id" class="btn btn-purple mt-2">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

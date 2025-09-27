@@ -1,0 +1,58 @@
+﻿@model PROJECT_CLIENT.DTO.LoginDto
+
+<style>
+    .btn-purple {
+        background-color: #6f42c1;
+        border-color: #6f42c1;
+        color: #fff;
+    }
+
+        .btn-purple:hover {
+            background-color: #5a379f;
+            border-color: #5a379f;
+        }
+
+    .card-border-purple {
+        border-top: 4px solid #6f42c1;
+    }
+
+    .text-purple {
+        color: #6f42c1;
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+            <div class="card shadow-sm card-border-purple">
+                <div class="card-body">
+                    <h4 class="text-center mb-4 text-purple">VNNEWS - Báo lá cải nhiều người xem nhất!</h4>
+
+                    <form asp-action="Login" method="post">
+                        <div class="mb-3">
+                            <label asp-for="UserName" class="form-label text-purple">Tên đăng nhập</label>
+                            <input asp-for="UserName" class="form-control" placeholder="Nhập tên đăng nhập" />
+                            <span asp-validation-for="UserName" class="text-danger small"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Password" class="form-label text-purple">Mật khẩu</label>
+                            <input asp-for="Password" type="password" class="form-control" placeholder="Nhập mật khẩu" />
+                            <span asp-validation-for="Password" class="text-danger small"></span>
+                        </div>
+
+                        @if (ViewBag.Error != null)
+                        {
+                            <div class="alert alert-danger">@ViewBag.Error</div>
+                        }
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-purple">Đăng nhập</button>
+                            <a asp-controller="Register" asp-action="Index" class="btn btn-outline-secondary">Chưa có tài khoản? Đăng ký</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

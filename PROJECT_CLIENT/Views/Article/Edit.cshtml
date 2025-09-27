@@ -1,0 +1,109 @@
+﻿@model PROJECT_CLIENT.DTO.ArticleUpdateDto
+@{
+    ViewData["Title"] = "Sửa bài báo";
+    var categories = ViewBag.Categories as List<PROJECT_CLIENT.DTO.CategoryDTO>;
+    var tags = ViewBag.Tags as List<PROJECT_CLIENT.DTO.TagDTO>;
+    var article = ViewBag.ArticleInfo as PROJECT_CLIENT.DTO.ArticleDto;
+}
+
+<style>
+    h2 {
+        color: #6f42c1;
+    }
+
+    .btn-purple {
+        background-color: #6f42c1;
+        color: white;
+        border: none;
+    }
+
+        .btn-purple:hover {
+            background-color: #5a36a5;
+        }
+
+    .form-label {
+        color: #6f42c1;
+        font-weight: 600;
+    }
+
+    .dropdown-toggle {
+        background-color: #6f42c1;
+        color: white;
+    }
+
+        .dropdown-toggle:hover {
+            background-color: #5a36a5;
+        }
+</style>
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="Status" />
+
+    <div class="mb-3">
+        <label asp-for="Title" class="form-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Content" class="form-label"></label>
+        <textarea asp-for="Content" class="form-control"></textarea>
+        <span asp-validation-for="Content" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Source" class="form-label"></label>
+        <input asp-for="Source" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="CategoryId" class="form-label">Thể loại</label>
+        <select asp-for="CategoryId" class="form-select">
+            @foreach (var c in categories)
+            {
+                <option value="@c.Id" selected="@(article.CategoryName == c.Name ? "selected" : null)">@c.Name</option>
+            }
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ImageUrl" class="form-label"></label>
+        <input asp-for="ImageUrl" class="form-control" />
+        <span asp-validation-for="ImageUrl" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label class="form-label">Chọn các tag</label>
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Chọn tag
+            </button>
+            <ul class="dropdown-menu" style="max-height: 200px; overflow-y: auto;">
+                @foreach (var tag in tags)
+                {
+                    var isChecked = article.Tags.Contains(tag.Name);
+                    <li class="dropdown-item">
+                        <label><input type="checkbox" name="TagIds" value="@tag.Id" @(isChecked ? "checked" : "") /> @tag.Name</label>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+
+    <input type="hidden" name="TagIdsInput" id="TagIdsInput" />
+
+    <button type="submit" class="btn btn-purple" onclick="prepareTagIds()">Lưu</button>
+</form>
+
+@section Scripts {
+    <script>
+        function prepareTagIds() {
+            const selected = [];
+            document.querySelectorAll('input[name="TagIds"]:checked').forEach(cb => selected.push(cb.value));
+            document.getElementById('TagIdsInput').value = selected.join(',');
+        }
+    </script>
+}

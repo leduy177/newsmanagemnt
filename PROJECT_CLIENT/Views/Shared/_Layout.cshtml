@@ -1,0 +1,243 @@
+﻿@using System.Security.Claims
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PROJECT_CLIENT</title>
+
+    <!-- ✅ Bootstrap 5.3.7 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- ✅ Custom CSS -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PROJECT_CLIENT.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        :root {
+            --bs-purple: #6f42c1;
+            --bs-purple-dark: #59329d;
+        }
+
+        .text-purple {
+            color: var(--bs-purple) !important;
+        }
+
+        .btn-purple {
+            background-color: var(--bs-purple);
+            border-color: var(--bs-purple);
+            color: white;
+        }
+
+            .btn-purple:hover {
+                background-color: var(--bs-purple-dark);
+                border-color: var(--bs-purple-dark);
+                color: white;
+            }
+
+        .navbar-custom {
+            background-color: #f8f2fc;
+            border-bottom: 2px solid #d8c2f0;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #f3e8ff;
+        }
+
+        .footer {
+            background-color: #f3e8ff;
+            color: #6f42c1;
+        }
+
+        .nav-link,
+        .navbar-brand {
+            color: var(--bs-purple) !important;
+            font-weight: 500;
+        }
+
+            .nav-link:hover,
+            .navbar-brand:hover {
+                color: var(--bs-purple-dark) !important;
+            }
+
+        .dropdown-item.text-danger:hover {
+            background-color: #f8d7da !important;
+        }
+
+        .btn-outline-purple {
+            color: var(--bs-purple);
+            border-color: var(--bs-purple);
+        }
+
+            .btn-outline-purple:hover {
+                background-color: var(--bs-purple);
+                color: white;
+            }
+
+        .logo-img {
+            height: 60px;
+            width: auto;
+            margin-right: 10px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light navbar-custom shadow-sm mb-3">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <a class="navbar-brand d-flex align-items-center" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/logoprn232.png" alt="VNNEWS Logo" class="logo-img" />
+                    <div class="ms-2">
+                        <small class="slogan text-purple">Báo lá cải nhiều người xem nhất!</small>
+                    </div>
+                </a>
+
+                <div class="text-center flex-grow-1">
+                    <div id="weather-box" class="text-muted small">
+                        <span id="current-date"></span> |
+                        <span id="weather-location">Đang tải...</span> |
+                        <span id="weather-temp"></span>°C |
+                        <span id="weather-desc"></span>
+                    </div>
+                </div>
+
+                <ul class="navbar-nav ms-auto">
+                    @if (User.Identity != null && User.Identity.IsAuthenticated)
+                    {
+                        var role = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role || c.Type == "role")?.Value ?? "";
+
+                        <li class="nav-item d-flex align-items-center me-2">
+                            <span class="nav-link">👋 @User.Identity.Name</span>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                <i class="fa-solid fa-user-gear"></i> Profile
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" asp-controller="Account" asp-action="Profile">Xem hồ sơ</a></li>
+
+                                @* Quản lý tuỳ theo vai trò *@
+                                @if (role == "ADMIN")
+                                {
+                                    <li><a class="dropdown-item text-danger" asp-controller="AdminClient" asp-action="Index">Quản lý (Admin)</a></li>
+                                }
+                                else if (role == "AUTHOR")
+                                {
+                                    <li><a class="dropdown-item text-primary" asp-controller="ManageByAuthor" asp-action="Index">Quản lý (Author)</a></li>
+                                }
+                                else if (role == "MODERATOR")
+                                {
+                                    <li><a class="dropdown-item text-warning" asp-controller="Article" asp-action="Moderate">Quản lý (Mod)</a></li>
+                                }
+
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <form method="post" asp-controller="Account" asp-action="Logout" class="dropdown-item p-0">
+                                        <button type="submit" class="btn btn-link text-start w-100">Đăng xuất</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="btn btn-outline-purple btn-sm" asp-controller="Account" asp-action="Login">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </li>
+                    }
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer-purple mt-5 py-4 text-white">
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2025 - <strong>VNNEWS</strong>. All rights reserved.</p>
+            <p class="mb-0">
+                <a href="/Home" class="text-white text-decoration-underline me-3">Chính sách riêng tư</a>
+                <a href="/Home" class="text-white text-decoration-underline me-3">Liên hệ</a>
+                <a href="/Home" class="text-white text-decoration-underline">Về chúng tôi</a>
+            </p>
+        </div>
+    </footer>
+
+    <style>
+        .footer-purple {
+            background-color: #6f42c1;
+        }
+
+            .footer-purple a:hover {
+                color: #d1b3ff;
+            }
+    </style>
+
+
+    <!-- ✅ Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <!-- ✅ jQuery (nếu cần) -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <!-- ✅ Custom JS -->
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!-- ✅ Weather Script -->
+    <script>
+           document.addEventListener("DOMContentLoaded", () => {
+            showCurrentDate();
+            loadWeather();
+        });
+
+        function showCurrentDate() {
+            const dateEl = document.getElementById("current-date");
+            const today = new Date();
+
+            const weekdays = ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"];
+            const weekday = weekdays[today.getDay()];
+            const dateStr = `${weekday}, ${today.getDate().toString().padStart(2, '0')}/${(today.getMonth() + 1).toString().padStart(2, '0')}/${today.getFullYear()}`;
+
+            dateEl.innerText = dateStr;
+        }
+        async function loadWeather() {
+            const apiKey = "f68d7de13287dad26d24e404fff10c95";
+            const city = "Hanoi";
+
+            try {
+                const response = await fetch(
+                    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=vi`
+                );
+
+                if (!response.ok) throw new Error("Không thể lấy dữ liệu thời tiết");
+
+                const data = await response.json();
+
+                document.getElementById("weather-location").innerText = data.name;
+                document.getElementById("weather-temp").innerText = Math.round(data.main.temp);
+                document.getElementById("weather-desc").innerText = data.weather[0].description;
+            } catch (err) {
+                document.getElementById("weather-box").innerText = "Không lấy được thời tiết";
+                console.error(err);
+            }
+        }
+
+        loadWeather();
+        // Nếu muốn cập nhật tự động mỗi 30 phút:
+        // setInterval(loadWeather, 1800000);
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

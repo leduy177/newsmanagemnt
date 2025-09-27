@@ -1,0 +1,23 @@
+﻿@model PROJECT_CLIENT.DTO.CommentDTO
+@{
+    ViewData["Title"] = "Tạo Comment";
+}
+<h2>@ViewData["Title"]</h2>
+<form asp-action="Create" method="post">
+    <div>
+        <label asp-for="Content"></label>
+        <input asp-for="Content" />
+        <span asp-validation-for="Content" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="ArticleId"></label>
+        <input asp-for="ArticleId" />
+        <span asp-validation-for="ArticleId" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="UserId"></label>
+        <input asp-for="UserId" />
+        <span asp-validation-for="UserId" class="text-danger"></span>
+    </div>
+    <button type="submit">Tạo</button>
+</form>

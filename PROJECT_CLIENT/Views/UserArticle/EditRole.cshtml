@@ -1,0 +1,44 @@
+﻿@model PROJECT_CLIENT.DTO.UserArticleDTO
+@{
+    ViewBag.Title = "Sửa vai trò người dùng trong bài viết";
+}
+
+<h2 class="text-purple mb-4"><i class="fa fa-user-pen"></i> @ViewBag.Title</h2>
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { @class = "card shadow-sm p-4", style = "max-width: 500px;" }))
+{
+    @Html.HiddenFor(m => m.UserId)
+    @Html.HiddenFor(m => m.ArticleId)
+
+    <div class="form-group mb-3">
+        @Html.LabelFor(m => m.UserName, htmlAttributes: new { @class = "form-label fw-bold text-purple" })
+        @Html.TextBoxFor(m => m.UserName, new { @readonly = "readonly", @class = "form-control" })
+    </div>
+
+    <div class="form-group mb-3">
+        @Html.LabelFor(m => m.RoleInArticle, htmlAttributes: new { @class = "form-label fw-bold text-purple" })
+        @Html.TextBoxFor(m => m.RoleInArticle, new { @class = "form-control" })
+    </div>
+
+    <div class="d-flex gap-2">
+        <button type="submit" class="btn btn-purple"><i class="fa fa-save"></i> Lưu thay đổi</button>
+        @Html.ActionLink("Huỷ", "Details", new { articleId = Model.ArticleId }, new { @class = "btn btn-outline-secondary" })
+    </div>
+}
+
+<style>
+    .text-purple {
+        color: #6f42c1;
+    }
+
+    .btn-purple {
+        background-color: #6f42c1;
+        border-color: #6f42c1;
+        color: white;
+    }
+
+        .btn-purple:hover {
+            background-color: #59329d;
+            border-color: #59329d;
+        }
+</style>
