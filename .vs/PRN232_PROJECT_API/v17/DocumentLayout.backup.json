@@ -1,0 +1,949 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PRN232\\PRN232_PROJECT_API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\model\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\model\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\controllers\\articlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\controllers\\articlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\model\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\model\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\controllers\\userarticlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\controllers\\userarticlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\controllers\\userprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\controllers\\userprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\controllers\\tagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\controllers\\tagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\dto\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\dto\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\mapper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\mapper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\repository\\userarticlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\repository\\userarticlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\repository\\iuserarticlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\repository\\iuserarticlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\dto\\userarticledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\dto\\userarticledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\model\\userarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\model\\userarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\dto\\userarticlecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\dto\\userarticlecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\service\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\service\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\dto\\tagdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\dto\\tagdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\dto\\commentupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\dto\\commentupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\dto\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\dto\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\repository\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\repository\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\model\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\model\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\repository\\tagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\repository\\tagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\dto\\articleupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\dto\\articleupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\dto\\articledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\dto\\articledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\repository\\registerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\repository\\registerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\repository\\iregisterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\repository\\iregisterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\repository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\repository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\model\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\model\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\dto\\commentcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\dto\\commentcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\repository\\articlesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\repository\\articlesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\model\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\model\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\model\\articletag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\model\\articletag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\model\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\model\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\dto\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\dto\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\repository\\iarticlesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\repository\\iarticlesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\dto\\articlecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\dto\\articlecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\repository\\itagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\repository\\itagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\dto\\tagcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\dto\\tagcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\dto\\categorycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\dto\\categorycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\repository\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\repository\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\dto\\disableaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\dto\\disableaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\dto\\assignroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\dto\\assignroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\service\\ijwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\service\\ijwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\service\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\service\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\prn232_project_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\prn232_project_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\migrations\\20250628154045_update_v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\migrations\\20250628154045_update_v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\migrations\\20250628152106_update_v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\migrations\\20250628152106_update_v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|d:\\prn232\\prn232_project_api\\prn232_project_api\\migrations\\20250628162058_update_v3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25C427A-086A-4320-AB27-A115D29CC1B1}|PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj|solutionrelative:prn232_project_api\\migrations\\20250628162058_update_v3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ArticlesController.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Controllers\\ArticlesController.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Controllers\\ArticlesController.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Controllers\\ArticlesController.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Controllers\\ArticlesController.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAAAMYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:54:46.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Program.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Program.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Program.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Program.cs",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAAwMgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:20:39.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegisterController.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Controllers\\RegisterController.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Controllers\\RegisterController.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Controllers\\RegisterController.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Controllers\\RegisterController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T05:34:54.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Article.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Model\\Article.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Model\\Article.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Model\\Article.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Model\\Article.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABMAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:17:02.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:31:11.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAuwDMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:30:21.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Model\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Model\\AppDbContext.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Model\\AppDbContext.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Model\\AppDbContext.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAQwC0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:19:14.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserArticleController.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Controllers\\UserArticleController.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Controllers\\UserArticleController.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Controllers\\UserArticleController.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Controllers\\UserArticleController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:33:33.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:18:57.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T16:10:42.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserProfileController.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Controllers\\UserProfileController.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Controllers\\UserProfileController.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Controllers\\UserProfileController.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Controllers\\UserProfileController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:13:40.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TagController.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Controllers\\TagController.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Controllers\\TagController.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Controllers\\TagController.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Controllers\\TagController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAYwGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:04:00.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Controllers\\CommentController.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Controllers\\CommentController.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Controllers\\CommentController.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Controllers\\CommentController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAUwF8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:25:36.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Mapper\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Mapper\\AutoMapperProfile.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Mapper\\AutoMapperProfile.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Mapper\\AutoMapperProfile.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA0wDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T16:30:18.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserProfileDto.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\UserProfileDto.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\DTO\\UserProfileDto.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\UserProfileDto.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\DTO\\UserProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:14:02.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserArticleRepository.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\UserArticleRepository.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Repository\\UserArticleRepository.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\UserArticleRepository.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Repository\\UserArticleRepository.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAIwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:32:46.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IUserArticleRepository.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\IUserArticleRepository.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Repository\\IUserArticleRepository.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\IUserArticleRepository.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Repository\\IUserArticleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:32:23.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserArticleDTO.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\UserArticleDTO.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\DTO\\UserArticleDTO.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\UserArticleDTO.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\DTO\\UserArticleDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:31:45.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserArticle.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Model\\UserArticle.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Model\\UserArticle.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Model\\UserArticle.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Model\\UserArticle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:18:39.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserArticleCreateDTO.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\UserArticleCreateDTO.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\DTO\\UserArticleCreateDTO.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\UserArticleCreateDTO.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\DTO\\UserArticleCreateDTO.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T05:59:18.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BaseService.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Service\\BaseService.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Service\\BaseService.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Service\\BaseService.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Service\\BaseService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:23:53.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TagDTO.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\TagDTO.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\DTO\\TagDTO.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\TagDTO.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\DTO\\TagDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T12:53:26.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CommentUpdateDTO.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\CommentUpdateDTO.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\DTO\\CommentUpdateDTO.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\CommentUpdateDTO.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\DTO\\CommentUpdateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T14:28:41.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CommentDTO.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\CommentDTO.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\DTO\\CommentDTO.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\CommentDTO.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\DTO\\CommentDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:26:16.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CommentRepository.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\CommentRepository.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Repository\\CommentRepository.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\CommentRepository.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Repository\\CommentRepository.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAmwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:24:51.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ArticleUpdateDto.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\ArticleUpdateDto.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\DTO\\ArticleUpdateDto.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\ArticleUpdateDto.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\DTO\\ArticleUpdateDto.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwBQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:52:08.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Model\\Comment.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Model\\Comment.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Model\\Comment.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Model\\Comment.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:18:08.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TagRepository.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\TagRepository.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Repository\\TagRepository.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\TagRepository.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Repository\\TagRepository.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:05:58.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ArticleDto.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\ArticleDto.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\DTO\\ArticleDto.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\ArticleDto.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\DTO\\ArticleDto.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:29:31.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\DTO\\RegisterDto.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\RegisterDto.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\DTO\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T05:33:05.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "RegisterRepository.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\RegisterRepository.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Repository\\RegisterRepository.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\RegisterRepository.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Repository\\RegisterRepository.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAUwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T05:33:57.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Model\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Model\\ApplicationUser.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Model\\ApplicationUser.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Model\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:16:15.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IRegisterRepository.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\IRegisterRepository.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Repository\\IRegisterRepository.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\IRegisterRepository.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Repository\\IRegisterRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T05:33:35.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\WeatherForecast.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\WeatherForecast.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T16:09:59.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Repository\\ICategoryRepository.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\ICategoryRepository.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Repository\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:16:43.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ArticlesRepository.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\ArticlesRepository.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Repository\\ArticlesRepository.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\ArticlesRepository.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Repository\\ArticlesRepository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAmwA8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:46:05.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CommentCreateDto.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\CommentCreateDto.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\DTO\\CommentCreateDto.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\CommentCreateDto.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\DTO\\CommentCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T02:43:17.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Model\\Category.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Model\\Category.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Model\\Category.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Model\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:17:36.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ArticleTag.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Model\\ArticleTag.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Model\\ArticleTag.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Model\\ArticleTag.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Model\\ArticleTag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:18:25.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Tag.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Model\\Tag.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Model\\Tag.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Model\\Tag.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Model\\Tag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:17:55.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "CategoryDTO.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\CategoryDTO.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\DTO\\CategoryDTO.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\CategoryDTO.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\DTO\\CategoryDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:16:03.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IArticlesRepository.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\IArticlesRepository.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Repository\\IArticlesRepository.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\IArticlesRepository.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Repository\\IArticlesRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:45:36.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ArticleCreateDto.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\ArticleCreateDto.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\DTO\\ArticleCreateDto.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\ArticleCreateDto.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\DTO\\ArticleCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:48:09.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ITagRepository.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\ITagRepository.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Repository\\ITagRepository.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\ITagRepository.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Repository\\ITagRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:04:55.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "TagCreateDTO.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\TagCreateDTO.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\DTO\\TagCreateDTO.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\TagCreateDTO.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\DTO\\TagCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:55:22.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\appsettings.json",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\appsettings.json",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\appsettings.json",
+              "RelativeToolTip": "PRN232_PROJECT_API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-28T15:20:04.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\LoginDto.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\DTO\\LoginDto.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\LoginDto.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\DTO\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:27:14.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "CategoryCreateDTO.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\CategoryCreateDTO.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\DTO\\CategoryCreateDTO.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\CategoryCreateDTO.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\DTO\\CategoryCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T14:16:42.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ICommentRepository.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\ICommentRepository.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Repository\\ICommentRepository.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\ICommentRepository.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Repository\\ICommentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:24:18.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Repository\\CategoryRepository.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Repository\\CategoryRepository.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Repository\\CategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:17:14.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "DisableAccountDto.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\DisableAccountDto.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\DTO\\DisableAccountDto.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\DisableAccountDto.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\DTO\\DisableAccountDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:27:39.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "AssignRoleDto.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\AssignRoleDto.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\DTO\\AssignRoleDto.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\DTO\\AssignRoleDto.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\DTO\\AssignRoleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:28:05.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "IJwtTokenGenerator.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Service\\IJwtTokenGenerator.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Service\\IJwtTokenGenerator.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Service\\IJwtTokenGenerator.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Service\\IJwtTokenGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:23:15.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "JwtTokenGenerator.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Service\\JwtTokenGenerator.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Service\\JwtTokenGenerator.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Service\\JwtTokenGenerator.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Service\\JwtTokenGenerator.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:23:32.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "20250628162058_update_v3.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Migrations\\20250628162058_update_v3.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Migrations\\20250628162058_update_v3.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Migrations\\20250628162058_update_v3.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Migrations\\20250628162058_update_v3.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T16:20:58.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "20250628154045_update_v2.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Migrations\\20250628154045_update_v2.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Migrations\\20250628154045_update_v2.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Migrations\\20250628154045_update_v2.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Migrations\\20250628154045_update_v2.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwC4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:40:45.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "20250628152106_update_v1.cs",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Migrations\\20250628152106_update_v1.cs",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\Migrations\\20250628152106_update_v1.cs",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\Migrations\\20250628152106_update_v1.cs",
+              "RelativeToolTip": "PRN232_PROJECT_API\\Migrations\\20250628152106_update_v1.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:21:06.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "PRN232_PROJECT_API.csproj",
+              "DocumentMoniker": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj",
+              "RelativeDocumentMoniker": "PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj",
+              "ToolTip": "D:\\PRN232\\PRN232_PROJECT_API\\PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj",
+              "RelativeToolTip": "PRN232_PROJECT_API\\PRN232_PROJECT_API.csproj",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-28T15:14:34.325Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
